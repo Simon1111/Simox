@@ -1,0 +1,102 @@
+doctype 5
+html
+  head
+    - if (typeof(title) == 'undefined')
+        title Express Starter Template
+    - else 
+        title= title
+    
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    // include default stylesheets and any view stylesheets
+       
+    link(rel="stylesheet", href="css/mobile.css")
+    link(href="css/bootstrap.css", rel="stylesheet")
+    link(href="css/style.css", rel="stylesheet")
+    link(href="css/fonts.css", rel="stylesheet")
+    
+    block head
+    
+    .container-fluid
+      .row
+        header
+          #logo
+            a(href="/")
+              img(src="img/logo_sm.png", alt="")
+          #rightContent
+            #comment
+              a(href="#")
+                img(src="img/comment.png", alt="статья")
+            #search
+              form
+                input#search(type="search")
+            #entrance
+              a(href="#")
+                img(src="img/entrance.png")
+            #phone
+              #phoneContent
+                a(href="#")
+                  span(style="color:red;font-size:25px;") 8(965)015-55-23
+                  br
+                  | &#1057;&#1072;&#1085;&#1082;&#1090;-&#1055;&#1077;&#1090;&#1077;&#1088;&#1073;&#1091;&#1088;&#1075;
+        main
+          ul#content
+            input#checkAct(type="checkbox")
+            #menuCheckbox(for="checkAct")
+              li.li
+                #left
+                  #iconmenu
+                  nav#responsive-menu
+                    ul
+                      li
+                        a &#1055;&#1086;&#1088;&#1090;&#1092;&#1086;&#1083;&#1080;&#1086;
+                      li
+                        a &#1054; &#1082;&#1086;&#1084;&#1087;&#1072;&#1085;&#1080;&#1080;
+                      li
+                        a &#1050;&#1085;&#1080;&#1075;&#1080;
+                      li
+                        a &#1057;&#1090;&#1072;&#1090;&#1100;&#1080;
+                        ul
+                          li
+                            a C#
+                          li
+                            a PHP
+                          li
+                            a JS
+                          li
+                            a PSD
+                          li
+                            a Ai
+                          li
+                            a HTML5
+                          li
+                            a CSS
+                          li
+                            a HTML5
+                      li
+                        a(href="/path") CMF Simox
+                      li 
+                        a(href="/") Home
+                      li 
+                        a(href="/chat") Chat
+                      li
+                        a(href="/adm") Adm
+                      li
+                        a(href="/fraim") Fraim
+                      li
+                        a(href="/about") About
+
+    #right
+        block content
+      
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src="js/bootstrap.js")
+    script(type="text/javascript")
+      $(document).ready(function(){
+      });
+      
+    // include default scripts and any view scripts
+    script(src='/javascripts/modernizr.js')

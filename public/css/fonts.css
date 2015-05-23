@@ -1,0 +1,18 @@
+@import "http://webfonts.ru/import/orpheus.css";
+@font-face {
+font-family:'HeliosThin';
+    src: url('../fonts/HeliosThin.eot?#iefix'),
+	url('../fonts/HeliosThin.otf');
+}
+@font-face {
+	font-family: 'Playfair Display';
+	src: local('☺'), url('../fonts/PlayfairDisplayRegular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Monotype Corsiva';
+	src: local('☺'), url('../fonts/MonotypeCorsiva.woff');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,77 @@
+
+/* checkbox-checkAct */
+
+#checkAct:checked + #menuCheckbox .li #left {
+	width: 225px;
+}
+#checkAct:checked  + #menuCheckbox .li #right{
+	margin-left: 200px;
+	transition: 0.5s;
+}
+#checkAct:checked  + #menuCheckbox .li #left #responsive-menu{
+	display: block;
+	transition: 0.5s;
+}
+/* checkbox-checkAct */
+
+@media only screen and (max-width: 769px)  {
+	#rrr{
+		width: 150px;
+		transition: 0.5s;
+		background: red;
+	}
+	#left{
+		width: 75px;
+		transition: 0.5s;
+	}
+	#right{
+		margin-left: 50px;
+		transition: 0.5s;
+	}
+	#iconmenu{
+		display: block;
+		transition: 0.5s;
+	}
+	#responsive-menu{
+		margin: 60px 0;
+		display: none;
+		transition: 0.5s;
+	}
+	#checkAct {
+		top: 65px;
+		transition: 0.5s;
+		display: block;
+	}
+	#phoneContent {
+		display: none;
+	}
+	#phone{
+		width: 0px;
+	}
+}
+@media only screen and (min-width: 769px)  {
+	#phone{
+		width: 200px;
+	}
+	#left{
+		width: 225px;
+		transition: 0.5s;
+	}
+	#right{
+		margin-left: 200px;
+		transition: 0.5s;
+	}
+	#iconmenu{
+		display: none;
+		transition: 0.5s;
+	}
+	#responsive-menu{
+		display: block;
+		transition: 0.5s;
+	}
+	#checkAct {
+		top: 0px;
+		transition: 0.5s;
+		display: none;
+	}
+}

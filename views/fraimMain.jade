@@ -1,0 +1,145 @@
+// Jade
+
+doctype html
+html(lang="ru")
+  head
+    title Simox
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/mobile.css")
+    link(href="css/bootstrap.css", rel="stylesheet")
+    link(href="css/adminStyle.css", rel="stylesheet")
+    link(href="css/fonts.css", rel="stylesheet")
+
+        block head
+
+    main
+      #left
+        #logoAdm
+        nav
+          ul
+            li.showelements
+              h2
+                a(href="")
+                  #arrow
+                    img(src="img/arrow.png", alt="")
+                  | front-end
+              article.elements
+                section
+                  p
+                    | new fraim:
+                    br
+                    form(action="")
+                      input.newElement(type="text")
+                      input.plus(type="submit", value="+")
+                section
+                  ul.padding0
+                    li
+                      a(href="") head
+                    li
+                      a(href="") header
+                      ul
+                        li
+                          a(href="") menu
+                    li
+                      a(href="") gallery
+                    li
+                      a(href="") content
+                    li
+                      a(href="") left_block
+                      ul
+                        li
+                          a(href="") advert
+                    li
+                      a(href="") footer
+            li.showelements
+              h2
+                a(href="")
+                  #arrow
+                    img(src="img/arrow.png", alt="")
+                  | back-end
+              article.elements
+                section
+                  p
+                    | new fraim:
+                    br
+                    form(action="")
+                      input.newElement(type="text")
+                      input.plus(type="submit", value="+")
+                section
+                  ul.padding0
+                    li
+                      a(href="") market
+                    li
+                      a(href="") news
+                    li
+                      a(href="") mailer
+            li.showelements
+              h2
+                a(href="")
+                  #arrow
+                    img(src="img/arrow.png", alt="")
+                  | pages
+              article.elements
+                section
+                  p
+                    | new page:
+                    br
+                    form(action="")
+                      input.newElement(type="text")
+                      input.plus(type="submit", value="+")
+                section
+                  ul.padding0
+                    li
+                      a(href="") pages
+                    li
+                      a(href="") page0
+                    li
+                      a(href="") mail
+            li.showelements
+              h2
+                a(href="")
+                  #arrow
+                    img(src="img/arrow.png", alt="")
+                  | category
+              article.elements
+                section
+                  p
+                    | new category:
+                    br
+                    form(action="")
+                      input.newElement(type="text")
+                      input.plus(type="submit", value="+")
+                section
+                  ul.padding0
+                    li
+                      a(href="") category1
+                    li
+                      a(href="") category2
+                    li
+                      a(href="") category3
+            li.showelements
+              h2
+                a(href="")
+                  #arrow
+                    img(src="img/arrow.png", alt="")
+                  | access
+              article.elements
+                section
+                  p
+                    | new user:
+                    br
+                    form(action="")
+                      input.newElement(type="text")
+                      input.plus(type="submit", value="+")
+                section
+                  ul.padding0
+                    li
+                      a(href="") user
+                    li
+                      a(href="") administrator
+                    li
+                      a(href="") moderator
+    #right
+        block content

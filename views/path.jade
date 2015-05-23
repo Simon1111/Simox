@@ -1,0 +1,30 @@
+extends fraimMain
+
+block content
+        #boxmenu
+          h1 Path
+          .E5E6E7
+            mixin path(name)
+              li.path=name
+            ul
+              +path('main')
+              +path('page_1')
+              +path('page_2')
+              +path('page_3')
+            ul
+              each val, index in {'path.jade':'main','path.jade':'page_1','path.jade':'page_2'}
+                li= index + ': ' + val
+            //each var {"book": {"name": "Hello", "price": 12.99}}
+            //h2= book.name
+            ul    
+              each val, index in {1:'one',2:'two',3:'three'}
+                li
+                  a(href=val) index
+
+
+        #box
+          #block.E5E6E7
+            form.back-end
+              textarea.E5E6E7
+                //include account/account
+                include back-end/file

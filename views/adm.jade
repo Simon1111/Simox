@@ -1,0 +1,55 @@
+doctype html
+html(lang="ru")
+  head
+    title Simox
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/mobile.css")
+    link(href="css/bootstrap.css", rel="stylesheet")
+    link(href="css/style.css", rel="stylesheet")
+    link(href="css/fonts.css", rel="stylesheet")
+    style
+      body{
+      background: #4D4D4D;
+      font-size: 20px;
+      margin: auto;
+      }
+      #author{
+      width: 210px;
+      margin: 0px auto;
+      padding: 100px 0;
+      }
+      input{
+      width: 210px;
+      }
+      #submit{
+      width: 100px;
+      float: right;
+      border: 2px #999 solid;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: #999;
+      transition: 0.5s;
+      }
+      #submit:hover{
+      background: #333;
+      color: #999;
+      transition: 0.5s;
+      }
+  body
+    .container
+      .row
+        #author
+          #logoAdm
+            img(src="img/logo.png", alt="", width="200")
+          form(action="")
+            label(for="") &#1055;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1100;:
+            br
+            input(type="text")
+            br
+            label(for="") &#1055;&#1072;&#1088;&#1086;&#1083;&#1100;:
+            br
+            input(type="password")
+            br
+            input#submit(type="submit", value="войти")
